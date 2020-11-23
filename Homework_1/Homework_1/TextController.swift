@@ -18,11 +18,21 @@ class TextController: UIViewController {
     @IBOutlet var greenColorField: UITextField!
     @IBOutlet var blueColorField: UITextField!
     
-    private func transition() {
+    private func transition(color: UIColor?) {
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let viewController = mainStoryboard.instantiateViewController(withIdentifier: "ColorViewController") as! ColorViewController
+        viewController.backColor = color
         self.view.window?.rootViewController = viewController
         self.view.window?.makeKeyAndVisible()
+    }
+    
+    private func AlertView(message: String) {
+        let dialogMessage = UIAlertController(title: "Attention", message: message, preferredStyle: .alert)
+        let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
+             print("Ok button tapped")
+          })
+         dialogMessage.addAction(ok)
+        self.present(dialogMessage, animated: true, completion: nil)
     }
     
     @IBAction func showPressed(_ sender: UIButton) {
@@ -50,15 +60,16 @@ class TextController: UIViewController {
             if(blue < 0 || blue > 255) {
                 throw ColorNumInputError.wrongColorRange("Wrong Blue Color Range")
             }
+            let selectedColor = UIColor(rgbColorCodeRed: red, green: green, blue: blue, alpha: 1.0)
+            transition(color: selectedColor)
         }
         
         do {
             try checkColorRange()
-            transition()
         } catch ColorNumInputError.wrongColorRange(let message) {
-            print(message)
+            AlertView(message: message)
         } catch ColorNumInputError.wrongInput(let message){
-            print(message)
+            AlertView(message: message)
         }
         catch {
             print("Unknown error")
@@ -67,7 +78,6 @@ class TextController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
 
