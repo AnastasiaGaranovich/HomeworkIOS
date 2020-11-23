@@ -63,7 +63,7 @@
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="ShowPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fQS-85-W9E"/>
+                                    <action selector="showPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K6v-af-sZE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -96,7 +96,7 @@
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="ShowPressed:" destination="x6A-OT-zYz" eventType="touchUpInside" id="QJc-k5-rms"/>
+                                    <action selector="returnPressed:" destination="x6A-OT-zYz" eventType="touchUpInside" id="GDQ-yQ-Usf"/>
                                 </connections>
                             </button>
                         </subviews>

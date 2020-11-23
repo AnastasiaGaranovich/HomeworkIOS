@@ -8,7 +8,7 @@
 import UIKit
 
 class ColorViewController: UIViewController {
-    @IBAction func ShowPressed(_ sender: UIButton) {
+    @IBAction func returnPressed(_ sender: UIButton) {
             let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let viewController = mainStoryboard.instantiateViewController(withIdentifier: "TextController") as! TextController
             self.view.window?.rootViewController = viewController
