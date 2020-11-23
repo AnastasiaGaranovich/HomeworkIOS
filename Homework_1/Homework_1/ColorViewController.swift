@@ -10,9 +10,8 @@ import UIKit
 class ColorViewController: UIViewController {
     
     @IBAction func returnPressed(_ sender: UIButton) {
-        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = mainStoryboard.instantiateViewController(withIdentifier: "TextController") as! TextController
-        self.view.window?.rootViewController = viewController
+        let controller = R.storyboard.main.textController()!
+        self.view.window?.rootViewController = controller
         self.view.window?.makeKeyAndVisible()
     }
     

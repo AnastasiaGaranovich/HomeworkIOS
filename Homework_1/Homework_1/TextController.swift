@@ -19,10 +19,9 @@ class TextController: UIViewController {
     @IBOutlet var blueColorField: UITextField!
     
     private func transition(color: UIColor?) {
-        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = mainStoryboard.instantiateViewController(withIdentifier: "ColorViewController") as! ColorViewController
-        viewController.backColor = color
-        self.view.window?.rootViewController = viewController
+        let controller = R.storyboard.main.colorViewController()!
+        controller.backColor = color
+        self.view.window?.rootViewController = controller
         self.view.window?.makeKeyAndVisible()
     }
     
