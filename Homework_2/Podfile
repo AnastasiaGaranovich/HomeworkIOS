@@ -1,0 +1,3 @@
+target 'Homework_2' do
+pod 'R.swift'
+end
