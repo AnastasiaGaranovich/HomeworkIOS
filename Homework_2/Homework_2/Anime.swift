@@ -13,6 +13,9 @@ class Anime {
     var image: UIImage!
     var characters = [Characters]()
     init(name: String, discription: String, image: UIImage, characters: [Characters]) {
-        
+        self.name = name
+        self.discription = discription
+        self.image = image
+        self.characters = characters
     }
 }

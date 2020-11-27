@@ -7,11 +7,31 @@
 
 import UIKit
 
-class AnimeTableController: UITableViewController {
+class AnimeTableController: UITableViewController, AnimeListDelegate {
     
+    func didPressButton(_ tag: Int) {
+        let viewController = R.storyboard.main.animeDiscriptionController()!
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tableView.register(UINib(nibName: "AnimeListCell", bundle: nil), forCellReuseIdentifier: "AnimeListCell")
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(AppData.animeList.count)
+        return AppData.animeList.count
+    }
+
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "AnimeListCell", for: indexPath) as! AnimeListCell
+        cell.cellDelegate = self
+        cell.cellButton.tag = indexPath.row
+        print(AppData.animeList[indexPath.row].name)
+        cell.animeLabel.text = AppData.animeList[indexPath.row].name
+        cell.animeImage.image = AppData.animeList[indexPath.row].image
+        return cell
     }
 
 

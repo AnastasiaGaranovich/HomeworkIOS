@@ -13,6 +13,8 @@ class Characters {
     var discription = ""
     
     init(name: String, discription: String, image: UIImage) {
-        
+        self.name = name
+        self.discription = discription
+        self.image = image
     }
 }
