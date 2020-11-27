@@ -11,6 +11,7 @@ class AnimeTableController: UITableViewController, AnimeListDelegate {
     
     func didPressButton(_ tag: Int) {
         let viewController = R.storyboard.main.animeDiscriptionController()!
+        viewController.anime = AppData.animeList[tag]
         self.navigationController?.pushViewController(viewController, animated: true)
     }
         
@@ -20,7 +21,6 @@ class AnimeTableController: UITableViewController, AnimeListDelegate {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(AppData.animeList.count)
         return AppData.animeList.count
     }
 
@@ -28,12 +28,14 @@ class AnimeTableController: UITableViewController, AnimeListDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AnimeListCell", for: indexPath) as! AnimeListCell
         cell.cellDelegate = self
         cell.cellButton.tag = indexPath.row
-        print(AppData.animeList[indexPath.row].name)
         cell.animeLabel.text = AppData.animeList[indexPath.row].name
         cell.animeImage.image = AppData.animeList[indexPath.row].image
         return cell
     }
 
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
 
 }
 
