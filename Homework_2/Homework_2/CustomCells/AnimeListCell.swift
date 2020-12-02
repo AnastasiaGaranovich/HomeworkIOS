@@ -7,17 +7,18 @@
 
 import UIKit
 
-protocol AnimeListDelegate: class {
-    func didPressButton(_ tag: Int)
+protocol AnimeListCellDelegate: class {
+    func didPressButton(_ anime: Anime)
 }
 
 class AnimeListCell: UITableViewCell {
-    var cellDelegate: AnimeListDelegate?
+    var cellDelegate: AnimeListCellDelegate?
+    var anime: Anime!
     @IBOutlet var animeLabel: UILabel!
     @IBOutlet var animeImage: UIImageView!
     @IBOutlet var cellButton: UIButton!
     
     @IBAction func buttonPressed(_ sender: UIButton) {
-        cellDelegate?.didPressButton(sender.tag)
+        cellDelegate?.didPressButton(anime)
     }
 }

@@ -26,7 +26,7 @@
 		5DCBE04B256E769000591D5D /* AnimeListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBE04A256E769000591D5D /* AnimeListCell.swift */; };
 		5DCBE050256E7BB100591D5D /* AnimeDiscriptionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBE04F256E7BB100591D5D /* AnimeDiscriptionController.swift */; };
 		5DCBE055256E7D3700591D5D /* Anime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBE054256E7D3700591D5D /* Anime.swift */; };
-		5DCBE05A256E7ED300591D5D /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBE059256E7ED300591D5D /* Characters.swift */; };
+		5DCBE05A256E7ED300591D5D /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBE059256E7ED300591D5D /* Character.swift */; };
 		5DCBE05F256E85FB00591D5D /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBE05E256E85FB00591D5D /* AppData.swift */; };
 /* End PBXBuildFile section */
 
@@ -73,7 +73,7 @@
 		5DCBE04A256E769000591D5D /* AnimeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeListCell.swift; sourceTree = "<group>"; };
 		5DCBE04F256E7BB100591D5D /* AnimeDiscriptionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDiscriptionController.swift; sourceTree = "<group>"; };
 		5DCBE054256E7D3700591D5D /* Anime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anime.swift; sourceTree = "<group>"; };
-		5DCBE059256E7ED300591D5D /* Characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
+		5DCBE059256E7ED300591D5D /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		5DCBE05E256E85FB00591D5D /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		62003E8746E9DC799309F4B4 /* Pods-Homework_2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework_2.debug.xcconfig"; path = "Target Support Files/Pods-Homework_2/Pods-Homework_2.debug.xcconfig"; sourceTree = "<group>"; };
 		A77DF72560BE326028FAE744 /* libPods-Homework_2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Homework_2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,7 +151,7 @@
 				5DCBE001256E6BDD00591D5D /* Homework_2.xcdatamodeld */,
 				5DCBE04F256E7BB100591D5D /* AnimeDiscriptionController.swift */,
 				5DCBE054256E7D3700591D5D /* Anime.swift */,
-				5DCBE059256E7ED300591D5D /* Characters.swift */,
+				5DCBE059256E7ED300591D5D /* Character.swift */,
 				5DCBE05E256E85FB00591D5D /* AppData.swift */,
 				5DBC513125712F680001E6CC /* CharacterListController.swift */,
 				5DBC5140257132BC0001E6CC /* CharacterInfoController.swift */,
@@ -380,7 +380,7 @@
 				5DCBDFFD256E6BDD00591D5D /* AnimeTableController.swift in Sources */,
 				5DBC513C25712FF00001E6CC /* CharacterListCell.swift in Sources */,
 				5DCBE04B256E769000591D5D /* AnimeListCell.swift in Sources */,
-				5DCBE05A256E7ED300591D5D /* Characters.swift in Sources */,
+				5DCBE05A256E7ED300591D5D /* Character.swift in Sources */,
 				5DCBE039256E716400591D5D /* R.generated.swift in Sources */,
 				5DCBE050256E7BB100591D5D /* AnimeDiscriptionController.swift in Sources */,
 				5DCBDFF9256E6BDD00591D5D /* AppDelegate.swift in Sources */,

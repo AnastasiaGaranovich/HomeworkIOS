@@ -13,7 +13,7 @@ class CharacterInfoController: UIViewController {
     @IBOutlet var characterDiscription: UITextView!
     @IBOutlet var characterImage: UIImageView!
     
-    var character: Characters!
+    var character: Character!
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -7,17 +7,18 @@
 
 import UIKit
 
-protocol CharacterListDelegate: class {
-    func didPressButton(_ tag: Int)
+protocol CharacterListCellDelegate: class {
+    func didPressButton(_ character: Character)
 }
 
 class CharacterListCell: UITableViewCell {
-    var cellDelegate: CharacterListDelegate?
+    var cellDelegate: CharacterListCellDelegate?
+    var character: Character!
     @IBOutlet var characterLabel: UILabel!
     @IBOutlet var characterImage: UIImageView!
     @IBOutlet var cellButton: UIButton!
     
     @IBAction func buttonPressed(_ sender: UIButton) {
-        cellDelegate?.didPressButton(sender.tag)
+        cellDelegate?.didPressButton(character)
     }
 }
