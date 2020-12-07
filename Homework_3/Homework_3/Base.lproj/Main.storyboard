@@ -25,16 +25,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2c-Fl-y5u">
-                                <rect key="frame" x="72" y="290" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99856859450000002" green="0.90621091760000005" blue="0.85659328830000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="32"/>
-                                <state key="normal" title="1">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFX-9l-s1a">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFX-9l-s1a">
                                 <rect key="frame" x="166" y="290" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99856859450000002" green="0.90621091760000005" blue="0.85659328830000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -42,8 +33,11 @@
                                 <state key="normal" title="2">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="inputNumberWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tx7-jt-Fhg"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQe-hZ-yFZ">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQe-hZ-yFZ">
                                 <rect key="frame" x="260" y="290" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99856859450000002" green="0.90621091760000005" blue="0.85659328830000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -51,8 +45,11 @@
                                 <state key="normal" title="3">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="inputNumberWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oaf-I4-ZIG"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dht-ls-iD0">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dht-ls-iD0">
                                 <rect key="frame" x="72" y="389" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99856859450000002" green="0.90621091760000005" blue="0.85659328830000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -60,8 +57,11 @@
                                 <state key="normal" title="4">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="inputNumberWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pA6-bX-I76"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lsh-Q8-CjM">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lsh-Q8-CjM">
                                 <rect key="frame" x="167" y="389" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99856859450000002" green="0.90621091760000005" blue="0.85659328830000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -69,8 +69,11 @@
                                 <state key="normal" title="5">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="inputNumberWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="krp-Di-Z1i"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFe-Jr-O5K">
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFe-Jr-O5K">
                                 <rect key="frame" x="260" y="389" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99856859450000002" green="0.90621091760000005" blue="0.85659328830000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -78,8 +81,11 @@
                                 <state key="normal" title="6">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="inputNumberWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="StG-61-Lxm"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KH4-1M-pft">
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KH4-1M-pft">
                                 <rect key="frame" x="73" y="488" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99856859450000002" green="0.90621091760000005" blue="0.85659328830000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -87,8 +93,11 @@
                                 <state key="normal" title="7">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="inputNumberWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FBd-cq-Glw"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJR-xK-n7J">
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJR-xK-n7J">
                                 <rect key="frame" x="167" y="488" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99856859450000002" green="0.90621091760000005" blue="0.85659328830000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -96,8 +105,11 @@
                                 <state key="normal" title="8">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="inputNumberWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lqf-Xn-TxJ"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gin-Yo-ROt">
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gin-Yo-ROt">
                                 <rect key="frame" x="260" y="488" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99856859450000002" green="0.90621091760000005" blue="0.85659328830000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -105,6 +117,9 @@
                                 <state key="normal" title="9">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="inputNumberWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3qf-Gm-wD5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTi-ep-8l0">
                                 <rect key="frame" x="74" y="586" width="80" height="80"/>
@@ -114,6 +129,9 @@
                                 <state key="normal" title="*">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="inputStar" destination="BYZ-38-t0r" eventType="touchUpInside" id="01C-3Y-iov"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfx-Pb-pMP">
                                 <rect key="frame" x="168" y="586" width="80" height="80"/>
@@ -123,6 +141,9 @@
                                 <state key="normal" title="0">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="inputNumberWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AS6-ji-spp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHV-x2-4bF">
                                 <rect key="frame" x="261" y="586" width="80" height="80"/>
@@ -132,6 +153,9 @@
                                 <state key="normal" title="#">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="inputLattice" destination="BYZ-38-t0r" eventType="touchUpInside" id="LtO-Hy-UrG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dl3-7E-kyr">
                                 <rect key="frame" x="167" y="703" width="80" height="80"/>
@@ -142,6 +166,9 @@
                                     <color key="titleColor" systemColor="labelColor"/>
                                     <imageReference key="image" image="phone.fill" catalog="system" symbolScale="large"/>
                                 </state>
+                                <connections>
+                                    <action selector="makePhoneCall" destination="BYZ-38-t0r" eventType="touchUpInside" id="Df5-r4-irX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3R-t5-a9a">
                                 <rect key="frame" x="290" y="717" width="50" height="30"/>
@@ -151,11 +178,31 @@
                                 <state key="normal">
                                     <imageReference key="image" image="delete.left" catalog="system" symbolScale="large"/>
                                 </state>
+                                <connections>
+                                    <action selector="deleteNumber" destination="BYZ-38-t0r" eventType="touchUpInside" id="j5p-11-2xR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2c-Fl-y5u">
+                                <rect key="frame" x="74" y="289" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99856859450000002" green="0.90621091760000005" blue="0.85659328830000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="32"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="inputNumberWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xfm-eS-jpl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="deleteButton" destination="E3R-t5-a9a" id="ayl-km-VXB"/>
+                        <outlet property="phoneButton" destination="dl3-7E-kyr" id="CzA-Pr-5O0"/>
+                        <outlet property="phoneNumber" destination="Tg1-l9-sFC" id="7Zv-gm-Fkg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

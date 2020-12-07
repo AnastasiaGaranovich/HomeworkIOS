@@ -9,11 +9,51 @@ import UIKit
 
 class PhoneViewController: UIViewController {
     
-
+    @IBOutlet var phoneButton: UIButton!
+    @IBOutlet var deleteButton: UIButton!
+    
+    func checkEmptyString() {
+        if (phoneNumber.text == "" || phoneNumber.text == nil) {
+            phoneButton.isHidden = true
+            deleteButton.isHidden = true
+        }
+        else {
+            phoneButton.isHidden = false
+            deleteButton.isHidden = false
+        }
+    }
+    
+    @IBOutlet var phoneNumber: UILabel!
+    
+    @IBAction func inputStar() {
+        phoneNumber.text! += "*"
+        checkEmptyString()
+    }
+    
+    @IBAction func inputLattice() {
+        phoneNumber.text! += "#"
+        checkEmptyString()
+    }
+    
+    @IBAction func inputNumber(button: UIButton) {
+        phoneNumber.text! += String(button.tag)
+        checkEmptyString()
+    }
+    @IBAction func deleteNumber() {
+        phoneNumber.text?.removeLast()
+        checkEmptyString()
+    }
+    
+    @IBAction func makePhoneCall() {
+        if let url = URL(string: "tel://\(phoneNumber.text!)"),
+        UIApplication.shared.canOpenURL(url) {
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+        checkEmptyString()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        checkEmptyString()
     }
-
-
 }
 
