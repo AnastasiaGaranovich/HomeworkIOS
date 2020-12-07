@@ -12,6 +12,8 @@ class PhoneViewController: UIViewController {
     @IBOutlet var phoneButton: UIButton!
     @IBOutlet var deleteButton: UIButton!
     
+    @IBOutlet var zeroButton: UIButton!
+    
     func checkEmptyString() {
         if (phoneNumber.text == "" || phoneNumber.text == nil) {
             phoneButton.isHidden = true
@@ -53,7 +55,14 @@ class PhoneViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        let longGesture = UILongPressGestureRecognizer(target: self, action: #selector(long))
+            zeroButton.addGestureRecognizer(longGesture)
         checkEmptyString()
     }
-}
 
+    @objc func long() {
+        phoneNumber.text! += "+"
+        checkEmptyString()
+        print("Long press")
+    }
+}

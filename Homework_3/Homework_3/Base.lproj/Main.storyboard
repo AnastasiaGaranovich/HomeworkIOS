@@ -194,6 +194,13 @@
                                     <action selector="inputNumberWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xfm-eS-jpl"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X8C-S8-y4D">
+                                <rect key="frame" x="204" y="641" width="9" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -202,6 +209,7 @@
                         <outlet property="deleteButton" destination="E3R-t5-a9a" id="ayl-km-VXB"/>
                         <outlet property="phoneButton" destination="dl3-7E-kyr" id="CzA-Pr-5O0"/>
                         <outlet property="phoneNumber" destination="Tg1-l9-sFC" id="7Zv-gm-Fkg"/>
+                        <outlet property="zeroButton" destination="lfx-Pb-pMP" id="gUq-Za-kCL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
