@@ -17,13 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tg1-l9-sFC">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tg1-l9-sFC">
                                 <rect key="frame" x="73" y="129" width="267" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99856859450000002" green="0.90621091760000005" blue="0.85659328830000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </label>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFX-9l-s1a">
                                 <rect key="frame" x="166" y="290" width="80" height="80"/>
@@ -33,6 +38,12 @@
                                 <state key="normal" title="2">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="inputNumberWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tx7-jt-Fhg"/>
                                 </connections>
@@ -45,6 +56,12 @@
                                 <state key="normal" title="3">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="inputNumberWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oaf-I4-ZIG"/>
                                 </connections>
@@ -57,6 +74,12 @@
                                 <state key="normal" title="4">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="inputNumberWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pA6-bX-I76"/>
                                 </connections>
@@ -69,6 +92,12 @@
                                 <state key="normal" title="5">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="inputNumberWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="krp-Di-Z1i"/>
                                 </connections>
@@ -81,6 +110,12 @@
                                 <state key="normal" title="6">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="inputNumberWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="StG-61-Lxm"/>
                                 </connections>
@@ -93,6 +128,12 @@
                                 <state key="normal" title="7">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="inputNumberWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FBd-cq-Glw"/>
                                 </connections>
@@ -105,6 +146,12 @@
                                 <state key="normal" title="8">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="inputNumberWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lqf-Xn-TxJ"/>
                                 </connections>
@@ -117,6 +164,12 @@
                                 <state key="normal" title="9">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="inputNumberWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3qf-Gm-wD5"/>
                                 </connections>
@@ -129,6 +182,12 @@
                                 <state key="normal" title="*">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="inputStar" destination="BYZ-38-t0r" eventType="touchUpInside" id="01C-3Y-iov"/>
                                 </connections>
@@ -141,6 +200,12 @@
                                 <state key="normal" title="0">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="inputNumberWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AS6-ji-spp"/>
                                 </connections>
@@ -153,6 +218,12 @@
                                 <state key="normal" title="#">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="inputLattice" destination="BYZ-38-t0r" eventType="touchUpInside" id="LtO-Hy-UrG"/>
                                 </connections>
@@ -166,6 +237,12 @@
                                     <color key="titleColor" systemColor="labelColor"/>
                                     <imageReference key="image" image="phone.fill" catalog="system" symbolScale="large"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="makePhoneCall" destination="BYZ-38-t0r" eventType="touchUpInside" id="Df5-r4-irX"/>
                                 </connections>
@@ -173,10 +250,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3R-t5-a9a">
                                 <rect key="frame" x="290" y="717" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99856859450000002" green="0.90621091760000005" blue="0.85659328830000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" systemColor="labelColor"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal">
-                                    <imageReference key="image" image="delete.left" catalog="system" symbolScale="large"/>
+                                    <imageReference key="image" image="delete.left.fill" catalog="system" symbolScale="large"/>
                                 </state>
                                 <connections>
                                     <action selector="deleteNumber" destination="BYZ-38-t0r" eventType="touchUpInside" id="j5p-11-2xR"/>
@@ -190,6 +266,13 @@
                                 <state key="normal" title="1">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=compact" hidden="NO"/>
                                 <connections>
                                     <action selector="inputNumberWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xfm-eS-jpl"/>
                                 </connections>
@@ -218,7 +301,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="delete.left" catalog="system" width="128" height="104"/>
+        <image name="delete.left.fill" catalog="system" width="128" height="104"/>
         <image name="phone.fill" catalog="system" width="128" height="114"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -59,7 +59,7 @@ class PhoneViewController: UIViewController {
             zeroButton.addGestureRecognizer(longGesture)
         checkEmptyString()
     }
-
+    
     @objc func long() {
         phoneNumber.text! += "+"
         checkEmptyString()
