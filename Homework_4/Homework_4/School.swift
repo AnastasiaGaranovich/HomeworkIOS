@@ -8,9 +8,13 @@
 import UIKit
 
 class School {
-    var students = [Student]()
+    static var students = [Student]()
     
-    init(students: [Student]) {
-        self.students = students
+   static func createSchool() {
+        students.append(Student(firstName: "James", lastName: "Thron", image: R.image.studentlog()!, height: 175))
+        students.append(Student(firstName: "Lolita", lastName: "Brands", image: R.image.studentlog()!, height: 168))
+        students.append(Student(firstName: "Bredly", lastName: "Throwh", image: R.image.studentlog()!, height: 182))
     }
+    
 }
+

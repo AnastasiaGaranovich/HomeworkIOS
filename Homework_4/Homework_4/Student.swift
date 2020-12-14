@@ -21,6 +21,6 @@ class Student {
     }
     
     func firstNameLastName(firstName: String, lastName: String) -> String {
-        return firstName + lastName
+        return firstName + " " + lastName
     }
 }

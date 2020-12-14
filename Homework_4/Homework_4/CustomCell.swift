@@ -8,18 +8,18 @@
 import UIKit
 
 protocol CustomCellDelegate: class {
-    func didPressButton(_ school: School)
+    func didPressButton(_ student: Student)
 }
 
 class CustomCell: UITableViewCell {
     var cellDelegate: CustomCellDelegate?
-    var school: School!
+    var student: Student!
     
     @IBOutlet var studentName: UILabel!
     @IBOutlet var studentImage: UIImageView!
     @IBOutlet var cellButton: UIButton!
     
     @IBAction func buttonPressed(_ sender: UIButton) {
-        cellDelegate?.didPressButton(school)
+        cellDelegate?.didPressButton(student)
     }
 }
