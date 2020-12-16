@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D0A22BC258A26A500F3D1D4 /* AddStudentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0A22BB258A26A500F3D1D4 /* AddStudentController.swift */; };
 		5D19639B25877D13003591BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D19639A25877D13003591BB /* AppDelegate.swift */; };
 		5D19639D25877D13003591BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D19639C25877D13003591BB /* SceneDelegate.swift */; };
 		5D19639F25877D13003591BB /* StudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D19639E25877D13003591BB /* StudentViewController.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D0A22BB258A26A500F3D1D4 /* AddStudentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudentController.swift; sourceTree = "<group>"; };
 		5D19639725877D13003591BB /* Homework_4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework_4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D19639A25877D13003591BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D19639C25877D13003591BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				5D1963DB258780B7003591BB /* School.swift */,
 				5D1963E325878244003591BB /* Student.swift */,
 				5D1963EB25878502003591BB /* SchoolTableViewController.swift */,
+				5D0A22BB258A26A500F3D1D4 /* AddStudentController.swift */,
 			);
 			path = Homework_4;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				5D19639F25877D13003591BB /* StudentViewController.swift in Sources */,
 				5D1963EC25878502003591BB /* SchoolTableViewController.swift in Sources */,
 				5D1963FE25878B70003591BB /* R.generated.swift in Sources */,
+				5D0A22BC258A26A500F3D1D4 /* AddStudentController.swift in Sources */,
 				5D1963DC258780B7003591BB /* School.swift in Sources */,
 				5D19639B25877D13003591BB /* AppDelegate.swift in Sources */,
 				5D1963D625877F15003591BB /* CustomCell.swift in Sources */,

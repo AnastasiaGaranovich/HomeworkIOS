@@ -9,6 +9,11 @@ import UIKit
 
 class SchoolTableViewController: UITableViewController, CustomCellDelegate {
     
+    @IBAction func addStudentPressButton() {
+        let viewController = R.storyboard.main.addStudentController()!
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
     func didPressButton(_ student: Student) {
         let viewController = R.storyboard.main.studentViewController()!
         viewController.student = student
@@ -18,6 +23,11 @@ class SchoolTableViewController: UITableViewController, CustomCellDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "CustomCell", bundle: nil), forCellReuseIdentifier: "CustomCell")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -33,6 +43,4 @@ class SchoolTableViewController: UITableViewController, CustomCellDelegate {
         cell.student = students
         return cell
     }
-    
-    
 }

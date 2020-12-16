@@ -1,3 +1,4 @@
 target 'Homework_4' do
 pod 'R.swift'
+pod 'IQKeyboardManagerSwift'
 end

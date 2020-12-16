@@ -10,7 +10,7 @@ import UIKit
 class Student {
     var firstName = ""
     var lastName = ""
-    var image: UIImage!
+    var image: UIImage?
     var height = 0
     
     init(firstName: String, lastName: String, image: UIImage, height: Int) {
