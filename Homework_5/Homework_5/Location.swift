@@ -1,6 +1,6 @@
 import Foundation
 
-class Location {
+class Location: Decodable {
     var city: String
     var country: String
     var tzId: String

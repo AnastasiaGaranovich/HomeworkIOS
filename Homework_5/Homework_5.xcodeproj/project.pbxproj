@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2910BE5D90DFBCEC6A75FBB3 /* libPods-Homework_5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 371969A37537A3FB699E4EC4 /* libPods-Homework_5.a */; };
 		5D4D418425F24917001ECF6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4D418325F24917001ECF6E /* AppDelegate.swift */; };
 		5D4D418625F24917001ECF6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4D418525F24917001ECF6E /* SceneDelegate.swift */; };
 		5D4D418825F24917001ECF6E /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4D418725F24917001ECF6E /* WeatherViewController.swift */; };
@@ -16,9 +17,13 @@
 		5D4D419A25F24AC4001ECF6E /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4D419925F24AC4001ECF6E /* CurrentWeather.swift */; };
 		5D4D41A025F25405001ECF6E /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4D419F25F25405001ECF6E /* Location.swift */; };
 		5D4D41A525F25757001ECF6E /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4D41A425F25757001ECF6E /* Network.swift */; };
+		5D89A1BA25F27007005CB028 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D89A1B925F27007005CB028 /* Weather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BE5BE9DD2280F66A9C6C9E6 /* Pods-Homework_5.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework_5.debug.xcconfig"; path = "Target Support Files/Pods-Homework_5/Pods-Homework_5.debug.xcconfig"; sourceTree = "<group>"; };
+		2B4C4329289215891583B4E7 /* Pods-Homework_5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework_5.release.xcconfig"; path = "Target Support Files/Pods-Homework_5/Pods-Homework_5.release.xcconfig"; sourceTree = "<group>"; };
+		371969A37537A3FB699E4EC4 /* libPods-Homework_5.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Homework_5.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D4D418025F24917001ECF6E /* Homework_5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework_5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D4D418325F24917001ECF6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D4D418525F24917001ECF6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +35,7 @@
 		5D4D419925F24AC4001ECF6E /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		5D4D419F25F25405001ECF6E /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		5D4D41A425F25757001ECF6E /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		5D89A1B925F27007005CB028 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2910BE5D90DFBCEC6A75FBB3 /* libPods-Homework_5.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		377F0C5D9772CB4DC1765621 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				371969A37537A3FB699E4EC4 /* libPods-Homework_5.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5D4D417725F24917001ECF6E = {
 			isa = PBXGroup;
 			children = (
 				5D4D418225F24917001ECF6E /* Homework_5 */,
 				5D4D418125F24917001ECF6E /* Products */,
+				6732A7D76BFE333286674E88 /* Pods */,
+				377F0C5D9772CB4DC1765621 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,8 +89,18 @@
 				5D4D419925F24AC4001ECF6E /* CurrentWeather.swift */,
 				5D4D419F25F25405001ECF6E /* Location.swift */,
 				5D4D41A425F25757001ECF6E /* Network.swift */,
+				5D89A1B925F27007005CB028 /* Weather.swift */,
 			);
 			path = Homework_5;
+			sourceTree = "<group>";
+		};
+		6732A7D76BFE333286674E88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BE5BE9DD2280F66A9C6C9E6 /* Pods-Homework_5.debug.xcconfig */,
+				2B4C4329289215891583B4E7 /* Pods-Homework_5.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +110,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D4D419425F2491A001ECF6E /* Build configuration list for PBXNativeTarget "Homework_5" */;
 			buildPhases = (
+				E414D8F18E6C39AD0F6C8D09 /* [CP] Check Pods Manifest.lock */,
 				5D4D417C25F24917001ECF6E /* Sources */,
 				5D4D417D25F24917001ECF6E /* Frameworks */,
 				5D4D417E25F24917001ECF6E /* Resources */,
@@ -141,6 +169,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E414D8F18E6C39AD0F6C8D09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Homework_5-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5D4D417C25F24917001ECF6E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -152,6 +205,7 @@
 				5D4D419A25F24AC4001ECF6E /* CurrentWeather.swift in Sources */,
 				5D4D418625F24917001ECF6E /* SceneDelegate.swift in Sources */,
 				5D4D41A025F25405001ECF6E /* Location.swift in Sources */,
+				5D89A1BA25F27007005CB028 /* Weather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +349,7 @@
 		};
 		5D4D419525F2491A001ECF6E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BE5BE9DD2280F66A9C6C9E6 /* Pods-Homework_5.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +369,7 @@
 		};
 		5D4D419625F2491A001ECF6E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B4C4329289215891583B4E7 /* Pods-Homework_5.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
