@@ -1,4 +1,3 @@
 target 'Homework_5' do
-  pod 'SwiftyJSON'
   pod 'Alamofire'
 end
