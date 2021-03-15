@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  Homework_5
-//
-//  Created by Анастасия Гаранович on 5.03.21.
-//
-
 import UIKit
 
 class WeatherViewController: UIViewController {
@@ -21,11 +14,11 @@ class WeatherViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         Network.getWeather {
-            if Weather.weather.isDay == true {
-                self.timesOfDayImage.image = UIImage(contentsOfFile: "day")
+            if AppData.weather.current.is_day != 0 {
+                self.timesOfDayImage.image = #imageLiteral(resourceName: "day")
             }
             else {
-                self.timesOfDayImage.image = UIImage(contentsOfFile: "night")
+                self.timesOfDayImage.image = #imageLiteral(resourceName: "night")
             }
         }
     }

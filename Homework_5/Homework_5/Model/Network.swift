@@ -10,7 +10,7 @@ class Network {
             switch response.result {
             case .success(let value):
                 do {
-                    Weather.weather = try JSONDecoder().decode(CurrentWeather.self, from: value)
+                    AppData.weather = try JSONDecoder().decode(Weather.self, from: value)
                     DispatchQueue.main.async {
                         completion()
                     }
